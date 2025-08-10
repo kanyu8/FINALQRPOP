@@ -2,27 +2,25 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
   <title>Picture Popup</title>
   <style>
-    body {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
+    html, body {
       margin: 0;
-      background: #f0f0f0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden;
+      background: #000;
     }
     img {
-      max-width: 90%;
-      max-height: 90vh;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover;
+      display: block;
     }
   </style>
 </head>
 <body>
   <img src="https://i.postimg.cc/gj2K0HLs/How-I-Came-Up-With-a-Heist-I-Will-Never-Do-1.png" alt="Pop-up Image" />
 </body>
-
 </html>
